@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイピングゲーム</title>
+    <style>
+        .gauge-container {
+            width: 100%;
+            height: 20px;
+            border: 1px solid black;
+            background-color: #e0e0e0;
+            margin-top: 10px; /* 追加: 上のマージンを設定 */
+        }
+
+        .gauge-fill {
+            height: 100%;
+            width: 0%;
+            background-color: #4CAF50;
+            transition: width 1s linear;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>司法試験タイピング</h1>
+    <!-- スタートボタンを追加 -->
+    <button id="start-button">スタート</button>
+    <p>Type this word: <strong id="word-to-type" style="color: black;"></strong></p> <!-- 文字色を初期値として黒に設定 -->
+    <input type="text" id="typed-input" disabled> <!-- 初めは入力できないようにする -->
+    <p>Score: <span id="score">0</span></p>
+    <p>Time left: <span id="time-left">60</span> seconds</p>
+    <!-- ゲージの表示を追加 -->
+    <div class="gauge-container">
+        <div id="timer-gauge" class="gauge-fill"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+

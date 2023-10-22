@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif; /* 追加: フォントの統一感を出すため */
+}
+
+#game-container {
+    text-align: center;
+}
+
+#word-to-type {
+    font-size: 24px;
+}
+
+#typed-input {
+    font-size: 18px;
+    padding: 5px; /* 追加: 入力フィールドに少しパディングを追加して見た目を良くする */
+    margin-top: 10px; /* 追加: 余白を設定 */
+}
+
+#score {
+    font-size: 18px;
+    margin-top: 10px; /* 追加: 余白を設定 */
+}
+
+.gauge-container {
+    width: 100%;
+    max-width: 300px; /* 追加: ゲージの最大幅を設定 */
+    height: 20px;
+    border: 1px solid black;
+    background-color: #e0e0e0;
+    margin-top: 10px;
+}
+
+.gauge-fill {
+    height: 100%;
+    width: 0%;
+    background-color: #4CAF50;
+    transition: width 1s linear;
+}
+
